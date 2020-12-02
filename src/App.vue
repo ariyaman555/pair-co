@@ -1,28 +1,38 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <PairCo/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import PairCo from './components/PairCo.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    PairCo
   }
 }
 </script>
 
 <style lang="scss">
+@font-face {
+  font-family: Supermarket;
+  src: url("./assets/fonts/supermarket.ttf") format("truetype");
+}
+@font-face {
+  font-family: Kanit;
+  src: url("./assets/fonts/Kanit-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: Arabica;
+  src: url("./assets/fonts/Arabica.ttf") format("truetype");
+}
+html, body {
+  margin: 0;
+  padding: 0;
+}
 #app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  font-family: Supermarket;
 }
 </style>
